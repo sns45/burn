@@ -26,7 +26,7 @@
                         break;
                     }
                     else {
-                        zipcode = userData.profile.address[0];
+                        zipcode = userData.profile.zipcode;
                         url = "/api/main/yelp/workout/location/" + zipcode;
                     }
                 }

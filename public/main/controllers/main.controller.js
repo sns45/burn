@@ -7,7 +7,6 @@
         vm.route = route;
         vm.genders = ["Male", "Female"];
         vm.person = {};
-        var userPath = '../../documents/objects/userObject.json';
         var userObject;
         (function () {
             $http.get('../../documents/objects/userObject.json').then(function (response) {
