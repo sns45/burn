@@ -10,25 +10,21 @@
         vm.route = route;
         var userData;
         
-        /*(function () {
+        (function () {
             for (var x = 0; x < 2; x++) {
                 
                     if (CommonSvc.getUserData() ==undefined) {
-                       console.log("Please Provide the your Zip Code");
-                        $location.path('/');
-                        break;
+                       $http.get('../../documents/objects/userObject.json').then(function (response) {
+                        userData = response.data;
+                            });
                     }
                     else {
                        userData = CommonSvc.getUserData();
                     }
                 
             }    
-        })();*/
-        (function () {
-            $http.get('../../documents/objects/userObject.json').then(function (response) {
-                userData = response.data;
-            });
         })();
+        
         
         function route(param) {
             switch (param){ 
