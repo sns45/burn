@@ -58,9 +58,7 @@
             switch (param) {
             case 'save':
                     for (var x = 0; x < 4; x++) {
-                if (x < 3) {
-                    console.log(x);
-                     userData.deit.push(weekData);
+                if (x < 3) { 
                     if (CommonSvc.getUserData() == undefined) {
                         console.log("Please Provide the your Zip Code");
                         $location.path('/deit');
@@ -73,7 +71,7 @@
                         console.log("No week data loaded");
                     }
                     else{
-                       
+                        userData.deit.push(weekData);
                         console.log(weekData);
                         console.log(userData);
                         CommonSvc.setUserData(userData);
