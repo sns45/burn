@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 // var index = require('./routes/index');
   var nutritionix = require('./routes/nutritionix');
   var main = require('./routes/main');
+  var user_data = require('./routes/user_data');
 
 var app = express();
 
@@ -21,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
   app.use('/api/nutritionix', nutritionix);
- //app.use('/users', users);
+  app.use('api/user', user_data);
  app.use('/api/main', main);
 
 // catch 404 and forward to error handler
