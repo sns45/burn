@@ -2,13 +2,16 @@
   "profile" :{
         "first_name":"",
 		"last_name":"",
+        "user_name":"",
 		"age"      :"",
 		"height"    :"",
 		"weight"   :"",
 		"gender"   :"",
         "email"   :"",
         "password"   :"",
-		"address" :[],
+		"address" :"",
+        "phone_number":"",
+        "zipcode" :"",
         "photo": {
         "thumb": ""
       }		

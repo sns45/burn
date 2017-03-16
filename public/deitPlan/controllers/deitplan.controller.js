@@ -28,7 +28,6 @@
                 if (x < 1) {
                     if (CommonSvc.getUserData() == undefined) {
                         console.log("Please Provide the your Zip Code");
-                     //   $location.path('/');
                         break;
                     }
                     else {
@@ -49,9 +48,6 @@
                 }
                 else {
                     vm.totalCal = pretotal;
-                    /*console.log(food);
-                    console.log(day);
-                    console.log(meal);*/
                     vm.foodArray.push(food);
                     
                 }
