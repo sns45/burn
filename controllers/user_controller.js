@@ -1,6 +1,6 @@
 var UserModel = require('../models/user').UserModel;
 
-module.exports.retrieveUser = functon() {
+/*module.exports.retrieveUser = functon() {
     
     UserModel.find({
         
@@ -11,7 +11,7 @@ module.exports.retrieveUser = functon() {
             console.log(data)
         }
     })
-}
+}*/
 
 module.exports.createUser = function (req, cb){
     UserModel.create(req.body, cb);
