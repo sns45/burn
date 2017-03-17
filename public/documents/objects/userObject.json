@@ -12,9 +12,8 @@
 		"address" :"",
         "phone_number":"",
         "zipcode" :"",
-        "photo": {
-        "thumb": ""
-      }		
+        "photo":""
+     		
     },
     "planning":{
 	    "status":"",

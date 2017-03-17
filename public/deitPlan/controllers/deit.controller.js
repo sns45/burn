@@ -16,7 +16,7 @@
            $http.get('../../documents/objects/weekObject.json').then(function (response) {
                    weekData = response.data;  
                         });         
-            })();
+            })(); 
         (function () {
             vm.weekArray = [{
                 "day": "Monday"
