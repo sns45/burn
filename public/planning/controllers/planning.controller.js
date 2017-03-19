@@ -27,10 +27,10 @@
                         $location.path('/');
                     break;
                     }else{  
-                    obj.weight.value = userData.profile.weight;
-                    obj.height.value = userData.profile.height;
-                    obj.sex = userData.profile.gender;
-                    obj.age = userData.profile.age;
+                    obj.weight.value = userData.userObject.profile.weight;
+                    obj.height.value = userData.userObject.profile.height;
+                    obj.sex = userData.userObject.profile.gender;
+                    obj.age = userData.userObject.profile.age;
                     }
                     
                 }
@@ -40,10 +40,10 @@
                             vm.risk = response.data.bmi.risk;
                             vm.weight = response.data.weight.kg + " kg";
                             vm.ideslWeight = response.data.ideal_weight;
-                            userData.planning.current_weigth = response.data.weight.kg;
-                            userData.planning.ideal_weight = response.data.ideal_weight;
-                            userData.planning.risk = response.data.bmi.risk;
-                            userData.planning.status = response.data.bmi.status;
+                            userData.userObject.planning.current_weigth = response.data.weight.kg;
+                            userData.userObject.planning.ideal_weight = response.data.ideal_weight;
+                            userData.userObject.planning.risk = response.data.bmi.risk;
+                            userData.userObject.planning.status = response.data.bmi.status;
                             CommonSvc.setUserData(userData);
                             //console.log(userData);
                             return response;

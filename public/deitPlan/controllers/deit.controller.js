@@ -71,7 +71,7 @@
                         console.log("No week data loaded");
                     }
                     else{
-                        userData.deit.push(weekData);
+                        userData.userObject.deit.push(weekData);
                         console.log(weekData);
                         console.log(userData);
                         CommonSvc.setUserData(userData);

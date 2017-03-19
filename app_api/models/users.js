@@ -51,9 +51,9 @@ var userSchema = new mongoose.Schema({
                 , address: String
                 , phone_number: String
 		 }
-    ]
+    ] 
         , deit: [
-            {
+            /*{
                 monday: {
                     breakfast: [{
                             food_name: String
@@ -355,7 +355,7 @@ var userSchema = new mongoose.Schema({
                         }
                 }]
                 }
-         }
+         }*/
 	  ]
     }
 });

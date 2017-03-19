@@ -10,6 +10,7 @@
         vm.route = route;
         var userData;
         var weekData;
+        var testData;
         (function () {
             for (var x = 0; x < 2; x++) {
                 
@@ -22,9 +23,12 @@
                             $http.get('../../documents/objects/weekObject.json').then(function (response) {
                             weekData = response.data;  
                             });
+                            $http.get('../../documents/objects/testObject.json').then(function (response) {
+                            testData = response.data;  
+                            });
                             
                         }else if(x> 1){
-                           userData.deit.push(weekData); 
+                        //   userData.userObject.deit.push(weekData); 
                         }
                        
                     }
@@ -42,16 +46,16 @@
 
                     if ((vm.password === vm.re_password)|| !vm.user_name== undefined){
                         
-                    userData.profile.first_name = vm.first_name;
-                    userData.profile.last_name = vm.last_name;
-                    userData.profile.address = vm.address;
-                    userData.profile.phone_number = vm.phone_number;
-                    userData.profile.email = vm.email;
-                    userData.profile.user_name = vm.user_name;
-                    userData.profile.password = vm.password;
+                    userData.userObject.profile.first_name = vm.first_name;
+                    userData.userObject.profile.last_name = vm.last_name;
+                    userData.userObject.profile.address = vm.address;
+                    userData.userObject.profile.phone_number = vm.phone_number;
+                    userData.userObject.email = vm.email;
+                    userData.userObject.profile.user_name = vm.user_name;
+                    userData.userObject.password = vm.password;
+                    userData.userObject.name = vm.first_name + vm.last_name;
                     CommonSvc.setUserData(userData);
-                    console.log(userData);
-                    $http.post('/api/user/data', userData).then(function (response) {
+                    $http.post('/api/user/register', testData).then(function (response) {
                             
                             return response;
                         });

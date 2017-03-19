@@ -26,7 +26,7 @@
                         break;
                     }
                     else {
-                        zipcode = userData.profile.zipcode;
+                        zipcode = userData.userObject.profile.zipcode;
                         url = "/api/main/yelp/workout/location/" + zipcode;
                     }
                 }
@@ -66,7 +66,7 @@
                 $location.path('/planning');
                 break;
             case 'Save':
-                userData.work_out.push(workoutObj);
+                userData.userObject.work_out.push(workoutObj);
                 console.log(userData);
                 CommonSvc.setUserData(userData);
                 $location.path('/planning');

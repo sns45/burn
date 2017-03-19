@@ -29,7 +29,7 @@ module.exports.register = function(req, res) {
     token = user.generateJwt();
     res.status(200);
     res.json({
-      "token" : token
+     user// "token" : token
     });
   });
 
@@ -58,7 +58,8 @@ module.exports.login = function(req, res) {
       token = user.generateJwt();
       res.status(200);
       res.json({
-        "token" : token
+          user
+         //"token" : token
       });
     } else {
       // If user is not found

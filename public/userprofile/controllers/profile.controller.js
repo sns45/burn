@@ -14,13 +14,13 @@
                 }
                 else {
                     userData = CommonSvc.getUserData();
-                    vm.first_name = userData.profile.first_name;
-                    vm.last_name = userData.profile.last_name;
-                    vm.phone_number = userData.profile.phone_number;
-                    vm.address = userData.profile.address;
-                    vm.age = userData.profile.age;
-                    vm.height = userData.profile.height + " cm";
-                    vm.weight = userData.profile.weight + " kg";
+                    vm.first_name = userData.userObject.profile.first_name;
+                    vm.last_name = userData.userObject.profile.last_name;
+                    vm.phone_number = userData.userObject.profile.phone_number;
+                    vm.address = userData.userObject.profile.address;
+                    vm.age = userData.userObject.profile.age;
+                    vm.height = userData.userObject.profile.height + " cm";
+                    vm.weight = userData.userObject.profile.weight + " kg";
                 }
             }
         })();

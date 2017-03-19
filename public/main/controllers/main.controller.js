@@ -7,10 +7,10 @@
         vm.route = route;
         vm.genders = ["Male", "Female"];
         vm.person = {};
-        var userObject;
+        var userData;
         (function () {
             $http.get('../../documents/objects/userObject.json').then(function (response) {
-                userObject = response.data;
+                userData = response.data;
             });
         })();
 
@@ -32,17 +32,20 @@
                         window.alert("You must enter an age between 18 and 100");
                     }
                     else {
-                        userObject.profile.age = vm.person.age;
-                        userObject.profile.height = vm.person.height;
-                        userObject.profile.weight = vm.person.weight;
-                        userObject.profile.zipcode = vm.person.zipcode;
+                        userData.userObject.profile.age = vm.person.age;
+                        userData.userObject.profile.height = vm.person.height;
+                        userData.userObject.profile.weight = vm.person.weight;
+                        userData.userObject.profile.zipcode = vm.person.zipcode;
                         if (vm.person.gender == "Male") {
-                            userObject.profile.gender = "m";
+                            userData.userObject.profile.gender = "m";
                         }
                         else {
-                            userObject.profile.gender = "f";
+                            userData.userObject.profile.gender = "f";
                         }
-                        CommonSvc.setUserData(userObject);
+                        console.log("*********************");
+                        console.log(userData);
+                        console.log("**********************");
+                        CommonSvc.setUserData(userData);
                         $location.path("/planning");
                     }
                 }

@@ -29,7 +29,7 @@
                     }
                     else {
                        
-                        zipcode = userData.profile.zipcode;  
+                        zipcode = userData.userObject.profile.zipcode;  
                         url = "/api/main/yelp/nutritionists/location/" + zipcode;
                     }
                 }
@@ -66,7 +66,7 @@
                 $location.path('/planning');
                 break;
             case 'Save':
-                userData.nutritionists.push(nutritionistObj);
+                userData.userObject.nutritionists.push(nutritionistObj);
                 console.log(userData);
                 CommonSvc.setUserData(userData);
                 $location.path('/planning');
