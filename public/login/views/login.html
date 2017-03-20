@@ -8,12 +8,12 @@
    <div class="loginContainer">
        <div class="loginbloc">
         <fieldset >
-            <legend>Sign in</legend> Username:
+            <legend>Sign in</legend> Email:
             <br>
-            <input type="text" name="" placeholder="Username" >
+            <input type="text" name="" placeholder="Email" ng-model="vm.credentials.email">
             <br> Password:
             <br>
-            <input type="password" name="" placeholder="Password" >
+            <input type="password" name="" placeholder="Password" ng-model="vm.credentials.password">
             <br>
             <input type="button" value="SignIn" ng-click="vm.route('SignIn')">
             <br> <a href="/#!/profile" ng-click="vm.route('Fpassword')">Forgot Password?</a> 

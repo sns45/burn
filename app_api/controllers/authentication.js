@@ -29,7 +29,8 @@ module.exports.register = function(req, res) {
     token = user.generateJwt();
     res.status(200);
     res.json({
-     user// "token" : token
+     user
+     //"token" : token
     });
   });
 
