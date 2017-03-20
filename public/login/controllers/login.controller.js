@@ -1,8 +1,8 @@
 "use strict";
 (function () {
-    angular.module("burnIt.login").controller("LoginCtrl", ["CommonSvc", "$location", "$http",LoginCtrl]);
+    angular.module("burnIt.login").controller("LoginCtrl", ["CommonSvc", "$location", "$http","authentication",LoginCtrl]);
 
-    function LoginCtrl(CommonSvc, $location,$http) {
+    function LoginCtrl(CommonSvc, $location,$http,authentication) {
         var vm = this;
         vm.route = route;
         var userData;
@@ -34,16 +34,13 @@
                     console.log(vm.credentials);
                      if ((vm.credentials.password == undefined) || vm.credentials.email == undefined) {
                         $location.path('/login');
-                       //  console.log(vm.credentials);
-                         
                     
                    }else if (vm.credentials.password  || vm.credentials.email ){
-                     $http.post('/api/user/login', vm.credentials).then(function (response) {
-                                console.log(response.data);
-                                 CommonSvc.setUserData(response.data);
-                                $location.path('/profile'); 
-                        
-                         });
+                   authentication
+                                  .login(vm.credentials)
+                                    .then(function(){
+                                    $location.path('profile');
+                                    });
                      
                    }
                     break;    
@@ -53,7 +50,7 @@
                 $location.path('/register');
                 break;
             case 'Fpassword':
-                $location.path('/profile');
+                $location.path('/login');
                 break;
             case 'back':
                 $location.path('/planning');

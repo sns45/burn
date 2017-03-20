@@ -24,7 +24,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="obj in vm.weekArray" ng-click="vm.go(obj)">
+                <tr ng-repeat="obj in vm.weekArray" ng-style="vm.isSelected(obj)" ng-click="vm.go(obj)">
                     <td ng-class="vm.customStyle.colorClass">{{obj.day}}</td>
                 </tr>
             </tbody>

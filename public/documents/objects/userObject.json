@@ -26,9 +26,9 @@
 	},
 	"nutritionists": [
 		{
-			"name": "first nutritionist",
-			"address": "bronx new york",
-			"phone_number": "233444"
+			"name": "",
+			"address": "",
+			"phone_number": ""
 		}
 	],
 	"work_out": [

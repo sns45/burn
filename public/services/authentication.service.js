@@ -8,6 +8,7 @@
   function authentication ($http, $window) {
 
     var saveToken = function (token) {
+      
       $window.localStorage['mean-token'] = token;
     };
 
@@ -44,14 +45,16 @@
     };
 
     register = function(user) {
-      return $http.post('/api/user/register', user).success(function(data){
-        saveToken(data.token);
+      return $http.post('/api/user/register', user).then(function(response){
+        
+        saveToken(response.data.token);
       });
     };
 
     login = function(user) {
-      return $http.post('/api/user/login', user).success(function(data) {
-        saveToken(data.token);
+      return $http.post('/api/user/login', user).then(function(response){
+        
+        saveToken(response.data.token);
       });
     };
 

@@ -1,5 +1,5 @@
 (function () {
-   var app = angular.module('burnIt.login');
+   var app = angular.module('burnIt');
     
     app.service("NutritionistsSvc", function($http){
         

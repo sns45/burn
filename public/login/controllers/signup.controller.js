@@ -1,8 +1,8 @@
 (function () {
     "use strict";
-    angular.module("burnIt.login").controller("SignupCtrl", ["CommonSvc", "$location", "$http", /*'NutritionistsSvc', SignupCtrl]);*/
+    angular.module("burnIt.login").controller("SignupCtrl", ["CommonSvc", "$location", "$http", "NutritionistsSvc","authentication", SignupCtrl]);
 
-    function SignupCtrl(CommonSvc, $location, $http /*,NutritionistsSvc*/ ) {
+    function SignupCtrl(CommonSvc, $location, $http ,NutritionistsSvc,authentication ) {
             var vm = this;
             vm.route = route;
             var userData;
@@ -48,16 +48,16 @@
                                 userData.userObject.profile.user_name = vm.user_name;
                                 //userData.userObject.password = vm.password;
                                 userData.userObject.name = vm.first_name + vm.last_name;
-                                console.log(userData);  
+                              //  console.log(userData);  
                             }
                             else {
-                                 $http.post('/api/user/register', userData).then(function (response) {
-                                console.log(response.data);
-                                 CommonSvc.setUserData(response.data);
-                                $location.path('/profile');
-                                //return response;    
-                             });
-                              //  
+                               
+                                authentication
+                                  .register(userData)
+                                    .then(function(){
+                                    $location.path('profile');
+                                    });
+                                
                             }
                         }
                     }
@@ -71,5 +71,5 @@
                 }
             }
     }
-  ]);
+  //]);
 })();
