@@ -23,11 +23,12 @@
                             });
                         }
                         else if (x > 1) {
-                            //   userData.userObject.deit.push(weekData); 
+                               userData.userObject.deit.push(weekData); 
                         }
                     }
                     else {
                         userData = CommonSvc.getUserData();
+                        console.log(userData);
                     }
                 }
             })();
@@ -35,7 +36,7 @@
             function route(param) {
                 switch (param) {
                 case 'signup':
-                    if ((vm.password === vm.re_password) || !vm.user_name == undefined) {
+                    if ((vm.password === vm.re_password) || !vm.email == undefined) {
                         for (var i = 0; i < 3; i++) {
                             if (i < 2) {
                                 userData.userObject.profile.first_name = vm.first_name;
@@ -48,7 +49,7 @@
                                 userData.userObject.profile.user_name = vm.user_name;
                                 //userData.userObject.password = vm.password;
                                 userData.userObject.name = vm.first_name + vm.last_name;
-                              //  console.log(userData);  
+                                console.log(userData);  
                             }
                             else {
                                

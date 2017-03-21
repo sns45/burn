@@ -1,99 +1,94 @@
-{
-    "email": ""
-    , "name": ""
-    , "password": ""
-    , "userObject": {
-        "profile": {
-            "first_name": ""
-            , "last_name": ""
-            , "user_name": ""
-            , "age": ""
-            , "height": ""
-            , "weight": ""
-            , "gender": ""
-            , "address": ""
-            , "phone_number": ""
-            , "zipcode": ""
-            , "photo": {
-                "thumb": ""
-            }
-        }
-        , "planning": {
-            "status": ""
-            , "risk": ""
-            , "current_weigth": ""
-            , "ideal_weight": ""
-        }
-        , "nutritionists": [
-            {
-                "name": ""
-                , "address": ""
-                , "phone_number": ""
+{      
+    "email": "janet@gmail.com",
+    "name":"test name",
+    "password": "123",
+	"userObject": {
+	"profile": {
+		"first_name": "Janet",
+		"last_name": "Christelle",
+		"user_name": "test",
+		"age": "29",
+		"height": "170",
+		"weight": "78",
+		"gender": "m",
+		"address": "new york street NJ 01139",
+		"phone_number": "111 928 1111",
+		"zipcode": "01139",
+		"photo": {
+			"thumb": "welcom"
 		}
-	]
-        , "work_out": [
-            {
-                "name": ""
-                , "address": ""
-                , "phone_number": ""
+	},
+	"planning": {
+		"status": "good health",
+		"risk": "none",
+		"current_weigth": "78",
+		"ideal_weight": "65"
+	},
+	"nutritionists": [
+		{
+			"name": "first nutritionist",
+			"address": "bronx new york",
+			"phone_number": "233444"
 		}
-	]
-        , "deit": [
-            {
-                "monday": {
-                    "breakfast": [{
-                        "first_name": ""
-                        , "last_name": ""
-                        , "age": ""
-                    }]
-                    , "first_snack": []
-                    , "lunch": []
-                    , "second_snack": []
-                    , "diner": []
-                }
-                , "tuesday": {
-                    "breakfast": []
-                    , "first_snack": []
-                    , "lunch": []
-                    , "second_snack": []
-                    , "diner": []
-                }
-                , "wednesday": {
-                    "breakfast": []
-                    , "first_snack": []
-                    , "lunch": []
-                    , "second_snack": []
-                    , "diner": []
-                }
-                , "thursday": {
-                    "breakfast": []
-                    , "first_snack": []
-                    , "lunch": []
-                    , "second_snack": []
-                    , "diner": []
-                }
-                , "friday": {
-                    "breakfast": []
-                    , "first_snack": []
-                    , "lunch": []
-                    , "second_snack": []
-                    , "diner": []
-                }
-                , "saturday": {
-                    "breakfast": []
-                    , "first_snack": []
-                    , "lunch": []
-                    , "second_snack": []
-                    , "diner": []
-                }
-                , "sunday": {
-                    "breakfast": []
-                    , "first_snack": []
-                    , "lunch": []
-                    , "second_snack": []
-                    , "diner": []
-                }
+	],
+	"work_out": [
+		{
+			"name": "thomas joe",
+			"address": "",
+			"phone_number": ""
 		}
-	]
-    }
+	],
+	"deit": [
+		{
+			"monday": {
+				"breakfast": [],
+				"first_snack": [],
+				"lunch": [],
+				"second_snack": [],
+				"diner": []
+			},
+			"tuesday": {
+				"breakfast": [],
+				"first_snack": [],
+				"lunch": [],
+				"second_snack": [],
+				"diner": []
+			},
+			"wednesday": {
+				"breakfast": [],
+				"first_snack": [],
+				"lunch": [],
+				"second_snack": [],
+				"diner": []
+			},
+			"thursday": {
+				"breakfast": [],
+				"first_snack": [],
+				"lunch": [],
+				"second_snack": [],
+				"diner": []
+			},
+			"friday": {
+				"breakfast": [],
+				"first_snack": [],
+				"lunch": [],
+				"second_snack": [],
+				"diner": []
+			},
+			"saturday": {
+				"breakfast": [],
+				"first_snack": [],
+				"lunch": [],
+				"second_snack": [],
+				"diner": []
+			},
+			"sunday": {
+				"breakfast": [],
+				"first_snack": [],
+				"lunch": [],
+				"second_snack": [],
+				"diner": []
+			}
+		}
+	]}
 }

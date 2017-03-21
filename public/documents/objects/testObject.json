@@ -1,39 +1,39 @@
 {      
-    "email": "",
-    "name":"",
-    "password": "",
+    "email": "janet@gmail.com",
+    "name":"test name",
+    "password": "123",
 	"userObject": {
 	"profile": {
-		"first_name": "",
-		"last_name": "",
-		"user_name": "",
-		"age": "",
-		"height": "",
-		"weight": "",
-		"gender": "",
-		"address": "",
-		"phone_number": "",
-		"zipcode": "",
+		"first_name": "Janet",
+		"last_name": "Christelle",
+		"user_name": "test",
+		"age": "29",
+		"height": "170",
+		"weight": "78",
+		"gender": "m",
+		"address": "new york street NJ 01139",
+		"phone_number": "111 928 1111",
+		"zipcode": "01139",
 		"photo": {
-			"thumb": ""
+			"thumb": "welcom"
 		}
 	},
 	"planning": {
-		"status": "",
-		"risk": "",
-		"current_weigth": "",
-		"ideal_weight": ""
+		"status": "good health",
+		"risk": "none",
+		"current_weigth": "78",
+		"ideal_weight": "65"
 	},
 	"nutritionists": [
 		{
-			"name": "",
-			"address": "",
-			"phone_number": ""
+			"name": "first nutritionist",
+			"address": "bronx new york",
+			"phone_number": "233444"
 		}
 	],
 	"work_out": [
 		{
-			"name": "",
+			"name": "thomas joe",
 			"address": "",
 			"phone_number": ""
 		}
