@@ -1,94 +1,99 @@
-{      
-    "email": "",
-    "name":"",
-    "password": "",
-	"userObject": {
-	"profile": {
-		"first_name": "",
-		"last_name": "",
-		"user_name": "",
-		"age": "",
-		"height": "",
-		"weight": "",
-		"gender": "",
-		"address": "",
-		"phone_number": "",
-		"zipcode": "",
-		"photo": {
-			"thumb": ""
+{
+    "email": ""
+    , "name": ""
+    , "password": ""
+    , "userObject": {
+        "profile": {
+            "first_name": ""
+            , "last_name": ""
+            , "user_name": ""
+            , "age": ""
+            , "height": ""
+            , "weight": ""
+            , "gender": ""
+            , "address": ""
+            , "phone_number": ""
+            , "zipcode": ""
+            , "photo": {
+                "thumb": ""
+            }
+        }
+        , "planning": {
+            "status": ""
+            , "risk": ""
+            , "current_weigth": ""
+            , "ideal_weight": ""
+        }
+        , "nutritionists": [
+            {
+                "name": ""
+                , "address": ""
+                , "phone_number": ""
 		}
-	},
-	"planning": {
-		"status": "",
-		"risk": "",
-		"current_weigth": "",
-		"ideal_weight": ""
-	},
-	"nutritionists": [
-		{
-			"name": "",
-			"address": "",
-			"phone_number": ""
+	]
+        , "work_out": [
+            {
+                "name": ""
+                , "address": ""
+                , "phone_number": ""
 		}
-	],
-	"work_out": [
-		{
-			"name": "",
-			"address": "",
-			"phone_number": ""
+	]
+        , "deit": [
+            {
+                "monday": {
+                    "breakfast": [{
+                        "first_name": ""
+                        , "last_name": ""
+                        , "age": ""
+                    }]
+                    , "first_snack": []
+                    , "lunch": []
+                    , "second_snack": []
+                    , "diner": []
+                }
+                , "tuesday": {
+                    "breakfast": []
+                    , "first_snack": []
+                    , "lunch": []
+                    , "second_snack": []
+                    , "diner": []
+                }
+                , "wednesday": {
+                    "breakfast": []
+                    , "first_snack": []
+                    , "lunch": []
+                    , "second_snack": []
+                    , "diner": []
+                }
+                , "thursday": {
+                    "breakfast": []
+                    , "first_snack": []
+                    , "lunch": []
+                    , "second_snack": []
+                    , "diner": []
+                }
+                , "friday": {
+                    "breakfast": []
+                    , "first_snack": []
+                    , "lunch": []
+                    , "second_snack": []
+                    , "diner": []
+                }
+                , "saturday": {
+                    "breakfast": []
+                    , "first_snack": []
+                    , "lunch": []
+                    , "second_snack": []
+                    , "diner": []
+                }
+                , "sunday": {
+                    "breakfast": []
+                    , "first_snack": []
+                    , "lunch": []
+                    , "second_snack": []
+                    , "diner": []
+                }
 		}
-	],
-	"deit": [
-		{
-			"monday": {
-				"breakfast": [],
-				"first_snack": [],
-				"lunch": [],
-				"second_snack": [],
-				"diner": []
-			},
-			"tuesday": {
-				"breakfast": [],
-				"first_snack": [],
-				"lunch": [],
-				"second_snack": [],
-				"diner": []
-			},
-			"wednesday": {
-				"breakfast": [],
-				"first_snack": [],
-				"lunch": [],
-				"second_snack": [],
-				"diner": []
-			},
-			"thursday": {
-				"breakfast": [],
-				"first_snack": [],
-				"lunch": [],
-				"second_snack": [],
-				"diner": []
-			},
-			"friday": {
-				"breakfast": [],
-				"first_snack": [],
-				"lunch": [],
-				"second_snack": [],
-				"diner": []
-			},
-			"saturday": {
-				"breakfast": [],
-				"first_snack": [],
-				"lunch": [],
-				"second_snack": [],
-				"diner": []
-			},
-			"sunday": {
-				"breakfast": [],
-				"first_snack": [],
-				"lunch": [],
-				"second_snack": [],
-				"diner": []
-			}
-		}
-	]}
+	]
+    }
 }

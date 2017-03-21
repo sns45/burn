@@ -23,7 +23,7 @@
                         <input type="button" value="Second Snack"  ng-click="vm.route('MSB')">
                         <input type="button" value="Diner" ng-click="vm.route('MD')">
                     </td>
-                    <td class="tdTable">1200</td>
+                    <td class="tdTable" ng-bind="vm.mondayCal"></td>
                 </tr>
                 <tr>
                     <td class="tdTable">Tuesday</td>
@@ -34,7 +34,7 @@
                             <input type="button" value="Second Snack" ng-click="vm.route('TSB')"> 
                             <input type="button" value="Diner" ng-click="vm.route('TD')">
                     </td>
-                    <td class="tdTable">1800</td>
+                    <td class="tdTable" ng-bind="vm.tuesadayCal"></td>
                 </tr>
                 <tr>
                     <td class="tdTable">Wednesday</td>
@@ -47,7 +47,7 @@
                             <input type="button" value="Diner" ng-click="vm.route('WD')">
                         
                     </td>
-                    <td class="tdTable">1200</td>
+                    <td class="tdTable" ng-bind="vm.wednesdayCal"></td>
                 </tr>
                 <tr>
                     <td class="tdTable">Thursday</td>
@@ -60,7 +60,7 @@
                             <input type="button" value="Diner" ng-click="vm.route('THD')"> 
                         
                     </td>
-                    <td class="tdTable">1800</td>
+                    <td class="tdTable" ng-bind="vm.thursdayCal"></td>
                 </tr>
                 <tr>
                     <td class="tdTable">Friday</td>
@@ -73,7 +73,7 @@
                             <input type="button" value="Diner" ng-click="vm.route('FD')"> 
                         
                     </td>
-                    <td class="tdTable">1200</td>
+                    <td class="tdTable" ng-bind="vm.fridayCal"></td>
                 </tr>
                 <tr>
                     <td class="tdTable">Saturday</td>
@@ -86,7 +86,7 @@
                             <input type="button" value="Diner" ng-click="vm.route('SD')"> 
                         
                     </td>
-                    <td class="tdTable">1800</td>
+                    <td class="tdTable" ng-bind="vm.saturdayCal"></td>
                 </tr>
                 <tr>
                     <td class="tdTable">Sunday</td>
@@ -99,14 +99,13 @@
                             <input type="button" value="Diner" ng-click="vm.route('SUD')"> 
                         
                     </td>
-                    <td class="tdTable">1800</td>
+                    <td class="tdTable" ng-bind="vm.sundayCal"></td>
                 </tr>
             </tbody>
         </table>
     </div>
     <div class="save-plan-button save-personal-trainer-button-container">
         <div class="save-plan-wrapper save-personal-trainer-wrapper">
-            <input type="button" name="go-back-diet-plan" class="save-nutritionists-setting" ng-click="vm.route('back')" value="Back">
-            <input type="button" name="edit-diet-plan" class="edit-nutritionists-p2st" ng-click="vm.route('edit')" value="Edit"> </div>
+            <input type="button" name="go-back-diet-plan" class="save-nutritionists-setting" ng-click="vm.route('back')" value="Back"></div>
     </div>
 </div>

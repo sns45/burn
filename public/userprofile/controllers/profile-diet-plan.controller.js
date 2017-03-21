@@ -12,14 +12,23 @@
             
             meanData.getProfile().then(function (data) {
                 userData = data.data.userObject;
-             //   console.log(data.data.userObject.deit[0].monday);
+                /*function calculateCal (var day)
+               console.log("*************"); */
+                console.log(userData.deit[1]);
+                
+                vm.mondayCal = calculateCal (userData.deit[1].monday);
+                vm.tuesadayCal = calculateCal (userData.deit[1].tuesday);
+                vm.wednesdayCal = calculateCal (userData.deit[1].wednesday);
+                vm.thursdayCal = calculateCal (userData.deit[1].thursday);
+                vm.fridayCal = calculateCal (userData.deit[1].friday);
+                vm.saturdayCal = calculateCal (userData.deit[1].saturday);
+                vm.sundayCal = calculateCal (userData.deit[1].sunday);
             });
         })();
 
         function route(param) {
             switch (param) {
             case 'MBF':
-                    console.log(userData.deit[1]);
                  meal = userData.deit[1].monday.breakfast;  
                  var modalInstance = $uibModal.open({
                     templateUrl: "userprofile/views/dailyFood.html",
@@ -584,6 +593,35 @@
                 $location.path('/profile');
                 break;
             }
+        }
+        
+        function calculateCal ( day){
+            var totalCal;
+             var breakfastCal = 0;
+             var firstCal = 0;
+             var lunchCal = 0;
+             var secondCal = 0;
+             var dinerCal = 0;
+             
+            for (var i= 0; i< day.breakfast.length; i++){
+                breakfastCal = breakfastCal + day.breakfast[i].numberofCal;
+            }
+            for (var i= 0; i< day.first_snack.length; i++){
+                firstCal = firstCal + day.first_snack[i].numberofCal;
+            }
+            for (var i= 0; i< day.lunch.length; i++){
+                lunchCal = lunchCal + day.lunch[i].numberofCal;
+            }
+            for (var i= 0; i< day.second_snack.length; i++){
+                secondCal = secondCal + day.second_snack[i].numberofCal;
+            }
+            for (var i= 0; i< day.diner.length; i++){
+                dinerCal = dinerCal + day.diner[i].numberofCal;
+            }
+            
+            totalCal = breakfastCal +  firstCal + lunchCal + secondCal + dinerCal;
+            
+            return totalCal;
         }
 
     }

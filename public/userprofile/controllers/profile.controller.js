@@ -1,8 +1,8 @@
 "use strict";
 (function () {
-    angular.module("burnIt.profile").controller("ProfileCtrl", ["CommonSvc", "$location", "meanData",ProfileCtrl]);
+    angular.module("burnIt.profile").controller("ProfileCtrl", ["CommonSvc", "$location", "meanData","authentication",ProfileCtrl]);
 
-    function ProfileCtrl(CommonSvc, $location, meanData) {
+    function ProfileCtrl(CommonSvc, $location, meanData,authentication) {
         var vm = this;
         vm.route = route;
         var userData;
@@ -13,8 +13,8 @@
                     
                         meanData.getProfile()
                             .then(function (data) {
-                        userData = data.data.userObject;
-                            console.log(data.data.userObject);
+                        //userData = data.data.userObject;
+                            console.log(data);
                         vm.first_name = data.data.userObject.profile.first_name;
                         vm.last_name = data.data.userObject.profile.last_name;
                         vm.phone_number = data.data.userObject.profile.phone_number;
@@ -52,6 +52,7 @@
                 $location.path('/profile/week-diet-plan');
                 break;
             case 'SignOut':
+                authentication.logout;
                 $location.path('/login');
                 break;
             }
