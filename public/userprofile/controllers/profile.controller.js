@@ -46,6 +46,7 @@
             switch (param) {
             case 'ProfileNutritionists':
                 $location.path('/profile/nutritionist-lists');
+                //$location.path('/nutritionists');
                 break;
             case 'ProfileDietPlan':
                 $location.path('/profile/week-diet-plan');

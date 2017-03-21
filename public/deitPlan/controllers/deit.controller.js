@@ -6,6 +6,7 @@
         var vm = this;
         vm.route = route;
         vm.numberOfCal;
+        vm.currentSelectedDay = null;
         var week;
         var weekArray = [];
         var userData;
@@ -50,33 +51,13 @@
 
 
         vm.go = function (obj) {
-            if (obj.selected === undefined || obj.selected === false) {
-                obj.selected = true;
+            //console.log(obj);
+            vm.currentSelectedDay = obj.day;
+            week = obj ;
+          };
 
-            } else {
-                obj.selected = false;
-
-            }
-            week = obj;
-            console.log(week);
-        };
-
-        vm.isSelected = function(obj) {
-            
-            if (obj.selected === true) {
-                return {
-                    "background-color": "green"
-                }
-            } else {
-                return {
-                    color: "black"
-                }
-            }
-        }
-   // }
-
-    function route(param) {
-        switch (param) {
+        function route(param) {
+            switch (param) {
             case 'save':
                 for (var x = 0; x < 4; x++) {
                     if (x < 3) {
