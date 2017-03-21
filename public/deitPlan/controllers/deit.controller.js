@@ -6,6 +6,7 @@
         var vm = this;
         vm.route = route;
         vm.numberOfCal;
+        vm.currentSelectedDay = null;
         var week;
         var weekArray = [];
         var userData;
@@ -51,6 +52,8 @@
         
         
           vm.go = function (obj) {
+            //console.log(obj);
+            vm.currentSelectedDay = obj.day;
             week = obj ;
           };
 

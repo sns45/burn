@@ -10,10 +10,10 @@
         <fieldset >
             <legend>Sign in</legend> Username:
             <br>
-            <input type="text" name="" placeholder="Username" >
+            <input type="email" ng-model="vm.email" name="email" placeholder="Username" required>
             <br> Password:
             <br>
-            <input type="password" name="" placeholder="Password" >
+            <input type="password" ng-model="vm.password" name="password" placeholder="Password" required >
             <br>
             <input type="button" value="SignIn" ng-click="vm.route('SignIn')">
             <br> <a href="/#!/profile" ng-click="vm.route('Fpassword')">Forgot Password?</a> 

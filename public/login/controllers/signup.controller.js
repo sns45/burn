@@ -55,12 +55,17 @@
                     userData.userObject.password = vm.password;
                     userData.userObject.name = vm.first_name + vm.last_name;
                     CommonSvc.setUserData(userData);
-                    $http.post('/api/user/register', testData).then(function (response) {
+                    $http.post('/api/user/register', userData).then(function (response) {
                             
+                            $location.path('/profile');    
                             return response;
-                        });
+                        },function (error, status){
+                            window.alert("Registration failed. Please try again.");
+                            //$scope.data.error = { message: error, status: status};
+                            //console.log($scope.data.error.status); 
+                      });
                         
-                        $location.path('/profile');
+                            //$location.path('/profile');
                     
                     }else {
                      window.alert("The password must match");   

@@ -1031,3 +1031,7 @@ p {
     background: linear-gradient(#F7C8C6, #B85450);
     /* Standard syntax */
 }
+
+.selectedDay {
+    background-color: aqua;
+}
