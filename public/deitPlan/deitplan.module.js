@@ -17,6 +17,11 @@
                 controller: "DeitPlanPreviewCtrl",
                 controllerAs: "vm"
             });
-
+            /*$routeProvider.when("/deitPlan/preview", {
+                templateUrl: "deitPlan/views/preview.html",
+                controller: "PreviewCtrl",
+                controllerAs: "vm"
+            });
+*/
         }])
 })();

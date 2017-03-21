@@ -11,9 +11,10 @@
                 if (CommonSvc.getUserData() == undefined) {
                     
                     
-                    meanData.getProfile()
+                        meanData.getProfile()
                             .then(function (data) {
                         userData = data.data.userObject;
+                            console.log(data.data.userObject);
                         vm.first_name = data.data.userObject.profile.first_name;
                         vm.last_name = data.data.userObject.profile.last_name;
                         vm.phone_number = data.data.userObject.profile.phone_number;
@@ -21,13 +22,11 @@
                         vm.age = data.data.userObject.profile.age;
                         vm.height = data.data.userObject.profile.height + " cm";
                         vm.weight = data.data.userObject.profile.weight + " kg";
+                        //var check = "monday.breakfast";
                         
-                            })
-                            /*.error(function (e) {
-                            console.log(e);
-                        })*/;
+                       console.log(data.data.userObject.deit[0].monday);
+                            });
                     
-                 //   vm.first_name = data.data.userObject.profile.first_name;
                     
                 }
                 else {

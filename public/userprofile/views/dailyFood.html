@@ -1,10 +1,10 @@
 <div class="maincontainer">
     <!-- <div class="title-container container"> -->
-    <div class="title-container">
+    <!--<div class="title-container">
         <div class="header2">
             <h3>Your favorite nutritionists</h3>
         </div>
-    </div>
+    </div>-->
     <div class="nutritionist-list-container">
         <table class="nutritionist-list-table">
            <thead>
@@ -12,7 +12,7 @@
                     <th class="thTable">Food Name</th>
                     <th class="thTable">Number of Calories</th>
                     <th class="thTable">Sample</th>
-                    <th class="thTable">Select</th>
+                   <!-- <th class="thTable">Select</th>-->
                 </tr>
             </thead>
              <tbody>
@@ -20,16 +20,9 @@
                     <td class="tdTable">{{obj.food_name}}</td>
                     <td class="tdTable">{{obj.numberofCal}}</td>
                     <td class="tdTable"><img ng-src="{{obj.thumb}}"></td>
-                    <td class="tdTable"><input type="checkbox" ng-click="vm.selectFunction(obj)"></td>
+                    <!--<td class="tdTable"><input type="checkbox" ng-click="vm.selectFunction(obj)"></td>-->
                 </tr>
             </tbody> 
         </table>
-    </div>
-    <div class="save-plan-button save-personal-trainer-button-container">
-        <div class="save-plan-wrapper save-personal-trainer-wrapper">
-            <input type="button" name="save-nutritionists-list" class="save-nutritionists-setting" ng-click="vm.route('NutritionistsSave')" value="Save">
-            <input type="button" name="edit-nutritionists-list" class="edit-nutritionists-list" ng-click="vm.route('NutritionistsEdit')" value="Edit">
-
-        </div>
     </div>
 </div>

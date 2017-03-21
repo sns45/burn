@@ -17,5 +17,10 @@
                 controller: "ProfileDietPlan",
                 controllerAs: "vm"
             });
+            $routeProvider.when("/profile/diet-preview", {
+                templateUrl: "userprofile/views/dailyFood.html",
+                controller: "PreviewCtrl",
+                controllerAs: "vm"
+            });
         }])
 })();
