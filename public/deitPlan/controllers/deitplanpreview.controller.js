@@ -11,7 +11,7 @@
             function route(param) {
                 switch (param){
                     case 'save':
-                            $location.path('/deit/daily');
+                            $location.path('/deit');
                             break;
                     case 'delete':
                         // save logic

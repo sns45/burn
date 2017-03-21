@@ -45,9 +45,11 @@ angular
     
         function getWeekData() {
             return weekData;
-        }
+        }   
+    
+    
     })
-    .controller("burnCtrl", ["$scope", "$location", burnCtrl]);
+    .controller("burnCtrl", ["$scope","$http","$window", "$location", burnCtrl]);
 
-function burnCtrl($scope,$location) {
+function burnCtrl($scope,$location,$http,$window) {
 };

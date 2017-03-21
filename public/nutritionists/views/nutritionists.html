@@ -8,7 +8,7 @@
         <table class="nutritionist-list-table">
             <thead>
                 <tr>
-                    <th class="thTable"  >Name</th>
+                    <th class="thTable">Name</th>
                     <th class="thTable">Address</th>
                     <th class="thTable">Telephone</th>
                     <th class="thTable">Rating</th>
@@ -16,7 +16,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="obj in vm.businessesArray">
+                <tr ng-repeat="obj in vm.businessesArray track by $index">
                     <td class="tdTable">{{obj.name}}</td>
                     <td class="tdTable">{{obj.location.display_address[0]}} {{obj.location.display_address[1] }}</td>
                     <td class="tdTable">{{obj.display_phone}}</td>
