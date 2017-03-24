@@ -22,5 +22,10 @@
                 controller: "PreviewCtrl",
                 controllerAs: "vm"
             });
+             $routeProvider.when("/profile/workout-plan", {
+                templateUrl: "userprofile/views/workout-plan.html",
+                controller: "ProfileWorkouts",
+                controllerAs: "vm"
+            });
         }])
 })();

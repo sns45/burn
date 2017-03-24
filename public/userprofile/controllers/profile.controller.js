@@ -30,7 +30,6 @@
             switch (param) {
             case 'ProfileNutritionists':
                 $location.path('/profile/nutritionist-lists');
-                //$location.path('/nutritionists');
                 break;
             case 'ProfileDietPlan':
                 $location.path('/profile/week-diet-plan');
@@ -39,6 +38,12 @@
                 authentication.logout;
                 $location.path('/login');
                 break;
+             case 'trackfoods':
+                    $location.path('/trackfoods');
+                    break;
+            case 'workout':
+                    $location.path('/profile/workout-plan');
+                    break;
             }
         }
     }

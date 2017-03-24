@@ -37,47 +37,23 @@
         <input type="button" value="SignOut" ng-click="vm.route('SignOut')">
          <div class="choose-fitness-method-buttons-container">
              <div class="choose-fitness-method-button-wrapper">
-                 <!-- <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Meet a Nutritionist" ng-click="vm.sendNutri()"> -->
-                 <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Meet a Nutritionist" ng-click="vm.route('ProfileNutritionists')">
+                 <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Your Nutritionist" ng-click="vm.route('ProfileNutritionists')">
              </div>
              <div class="choose-fitness-method-button-wrapper">
-                 <!-- <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Build Your Own Diet Plan"> -->
-                 <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Build Your Own Diet Plan" ng-click="vm.route('ProfileDietPlan')">
+                 <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Your Weekly Diet Plan" ng-click="vm.route('ProfileDietPlan')">
              </div>
          </div>
          <div class="choose-fitness-method-buttons-container">
 
              <div class="choose-fitness-method-button-wrapper">
                  <input type="button" name="work-out" class="choose-fitness-method-input work-out" value="Work Out"
-                        ng-click="vm.sendWorkout()">
+                        ng-click="vm.route('workout')">
              </div>
 
 
              <div class="choose-fitness-method-button-wrapper">
-                 <input type="button" name="keep-track-of-food" class="choose-fitness-method-input keep-track-of-food" value="Keep Track of your Food">
+                 <input type="button" name="keep-track-of-food" class="choose-fitness-method-input keep-track-of-food" value="Keep Track of your Food" ng-click="vm.route('trackfoods')">
              </div>
          </div>
      </div>
-
-
-     <!--<div class="user-profile-options">
-            <div class="user-profile-fitness-method-buttons-container">
-            <div class="user-profile-fitness-method-button-wrapper">
-                <input type="button" name="user-profile-nutritionist" class="user-profile-fitness-method-input user-profile-nutritionist" value="Nutritionist">
-            </div>
-            <div class="user-profile-fitness-method-button-wrapper">
-                <input type="button" name="user-profile-your-diet-plan" class="user-profile-fitness-method-input user-profile-your-diet-plan" value="Your Diet Plan">
-            </div>
-        </div>
-        <div class="user-profile-fitness-method-buttons-container">
-            <div class="user-profile-fitness-method-button-wrapper">
-                <input type="button" name="user-profile-work-out" class="user-profile-fitness-method-input user-profile-work-out" value="Work Out">
-            </div>
-            <div class="user-profile-fitness-method-button-wrapper">
-                <input type="button" name="user-profile-keep-track-of-food" class="user-profile-fitness-method-input user-profile-keep-track-of-food" value="Keep Track of your Food">
-            </div>
-        </div>
-      </div>-->
-
-
     </div>

@@ -666,20 +666,6 @@ p {
     left: 85%;
 }
 
-.searchbutton {
-    border-radius: 5px;
-    color: white;
-    position: absolute;
-    background: #008CFF;
-    font: 16px;
-    border: 2px solid #000000;
-    top: 70%;
-    left: 25%;
-    height: 11%;
-    width: 20%;
-    text-decoration-color: white;
-}
-
 .searchbutton2 {
     border-radius: 5px;
     color: white;
@@ -688,7 +674,35 @@ p {
     font: 16px;
     border: 2px solid #000000;
     top: 70%;
-    left: 50%;
+    left: 15%;
+    height: 11%;
+    width: 20%;
+    text-decoration-color: white;
+}
+
+.searchbutton {
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    background: #008CFF;
+    font: 16px;
+    border: 2px solid #000000;
+    top: 70%;
+    left: 40%;
+    height: 11%;
+    width: 20%;
+    text-decoration-color: white;
+}
+
+.searchbutton3 {
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    background: #008CFF;
+    font: 16px;
+    border: 2px solid #000000;
+    top: 70%;
+    left: 70%;
     height: 11%;
     width: 20%;
     text-decoration-color: white;

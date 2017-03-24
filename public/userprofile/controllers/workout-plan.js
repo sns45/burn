@@ -1,19 +1,15 @@
 "use strict";
 (function () {
-    angular.module("burnIt.profile").controller("ProfileNutritionists", ["CommonSvc", "$location", "meanData", ProfileNutritionists]);
+    angular.module("burnIt.profile").controller("ProfileWorkouts", ["CommonSvc", "$location", "meanData", ProfileWorkouts]);
 
-    function ProfileNutritionists(CommonSvc, $location, meanData) {
+    function ProfileWorkouts(CommonSvc, $location, meanData) {
         var vm = this;
         vm.route = route;
         var userData;
-        vm.nutritionists;
-        var nutritionistArrqy = [];
+        var userData;
         (function () {
-            
             meanData.getProfile().then(function (data) {
-                
-               vm.nutritionists = data.data.userObject.nutritionists;
-               
+                vm.nutritionists = data.data.userObject.work_out;
             });
         })();
 
@@ -23,6 +19,6 @@
                 $location.path('/profile');
                 break;
             }
-         }
+        }
     }
 })();

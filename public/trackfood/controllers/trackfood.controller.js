@@ -19,6 +19,9 @@
                 case 'back':
                     $location.path('/planning');
                     break;
+                case 'profile':
+                    $location.path('/profile');
+                    break;
             }
         }
 
