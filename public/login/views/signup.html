@@ -1,142 +1,22 @@
-<!--
-    <div class="maincontainer2">
-        <div class="user-info-container">
-            <div class="user-image-container">
-                <img class="user-image" src="https://image.freepik.com/free-icon/user-male-shape-in-a-circle-ios-7-interface-symbol_318-35357.jpg">
-            </div>
-            <div class="user-personal-info-container">
-                <div class="user-personal-info-row">
-                    <span>First name: {John}</span>
-                </div>
-                <div class="user-personal-info-row">
-                    <span>Last name: {Doe}</span>
-                </div>
-                 <div class="user-personal-info-row">
-                    <span>Phone Number: {367-678-0978}</span>
-                </div>
-                <div class="user-personal-info-row">
-                    <span>Address: {20 Bergen Avenue Bronx NY 1001}</span>
-                </div>
-                <div class="user-personal-info-row physical-parameters-row">
-                    <div class="physical-parameters">
-                        <span>Age: {28}</span>
-                    </div>
-                    <div class="physical-parameters">
-                        <span>Height: {5'8}"</span>
-                    </div>
-                    <div class="physical-parameters">
-                        <span>Weight: {300lb}</span>
-                    </div>
-                </div>
-            </div>
-            <br>
-            
-        </div>
-         
-        <div class="lose-method-choice-container2">
-        <input type="button" value="SignOut" ng-click="vm.route('SignOut')">
-         <div class="choose-fitness-method-buttons-container">
-             <div class="choose-fitness-method-button-wrapper">
-                 <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Meet a Nutritionist" ng-click="vm.route('ProfileNutritionists')">
-             </div>
-             <div class="choose-fitness-method-button-wrapper">
-                 <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Build Your Own Diet Plan" ng-click="vm.route('ProfileDietPlan')">
-             </div>
-         </div>
-         <div class="choose-fitness-method-buttons-container">
-
-             <div class="choose-fitness-method-button-wrapper">
-                 <input type="button" name="work-out" class="choose-fitness-method-input work-out" value="Work Out"
-                        ng-click="vm.sendWorkout()">
-             </div>
-
-
-             <div class="choose-fitness-method-button-wrapper">
-                 <input type="button" name="keep-track-of-food" class="choose-fitness-method-input keep-track-of-food" value="Keep Track of your Food">
-             </div>
-         </div>
-     </div>
+<div class="outerbox2">
+    <div class="innerbox2">
+        <input type="text" placeholder="First name" id="textbox2" ng-model="vm.first_name">
+        <input type="text" placeholder="Last name" id="textbox2" ng-model="vm.last_name">
+        <input type="text" placeholder="Address: Stree City State Zip Code" id="textbox2" ng-model="vm.address">
+        <input type="text" placeholder="Phone Number" id="textbox2" ng-model="vm.phone_number">
+        <input type="email" placeholder="Email" id="textbox2" ng-model="vm.email">
+        <input type="text" placeholder="User Name" id="textbox2" ng-model="vm.user_name">
+        <input type="password" placeholder="Password" id="password" ng-model="vm.password">
+        <input type="password" placeholder="Re-enter Password" id="password" ng-model="vm.re_password"> 
+    <div>
+        <input type="button" value="Sign Up" class="signupbutton2" ng-click="vm.route('signup')">
+    <input type="button" value="Sign In" class="signupbutton2" ng-click="vm.route('back')">
     </div>
--->
-     <!--<div class="user-profile-options">
-            <div class="user-profile-fitness-method-buttons-container">
-            <div class="user-profile-fitness-method-button-wrapper">
-                <input type="button" name="user-profile-nutritionist" class="user-profile-fitness-method-input user-profile-nutritionist" value="Nutritionist">
-            </div>
-            <div class="user-profile-fitness-method-button-wrapper">
-                <input type="button" name="user-profile-your-diet-plan" class="user-profile-fitness-method-input user-profile-your-diet-plan" value="Your Diet Plan">
-            </div>
-        </div>
-        <div class="user-profile-fitness-method-buttons-container">
-            <div class="user-profile-fitness-method-button-wrapper">
-                <input type="button" name="user-profile-work-out" class="user-profile-fitness-method-input user-profile-work-out" value="Work Out">
-            </div>
-            <div class="user-profile-fitness-method-button-wrapper">
-                <input type="button" name="user-profile-keep-track-of-food" class="user-profile-fitness-method-input user-profile-keep-track-of-food" value="Keep Track of your Food">
-            </div>
-        </div>
-      </div>-->
-
-
-
-<!--new code-->
-
-
-<div class="container" id="welcomecontainer"></div>
-    <div class="container" id="maincontainer">
-        <div class="col-md-4 col-md-push-8">
-            <div class="row">
-                <div class="col-md-12"><img src="assets/img/profile.png" id="profileimg"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <button class="btn btn-default" type="button">Upload Pic</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-8 col-md-pull-4">
-            <div class="row" id="welcome-inputs">
-                <div class="col-md-12">
-                    <input type="text" placeholder="First Name">
-                </div>
-            </div>
-            <div class="row" id="welcome-inputs">
-                <div class="col-md-12">
-                    <input type="text" placeholder="Last Name">
-                </div>
-            </div>
-            <div class="row" id="welcome-inputs">
-                <div class="col-md-12">
-                    <input type="text" placeholder="Address">
-                </div>
-            </div>
-            <div class="row" id="welcome-inputs">
-                <div class="col-md-12">
-                    <input type="text" placeholder="Phone number">
-                </div>
-            </div>
-            <div class="row" id="welcome-inputs">
-                <div class="col-md-12">
-                    <input type="text" placeholder="Username">
-                </div>
-            </div>
-            <div class="row" id="welcome-inputs">
-                <div class="col-md-12">
-                    <input type="password" placeholder="Password">
-                </div>
-            </div>
-            <div class="row" id="welcome-inputs">
-                <div class="col-md-12">
-                    <input type="password" placeholder="Re-enter Password">
-                </div>
-            </div>
-            <div class="row" id="welcome-inputs">
-                <div class="col-md-6 col-sm-6">
-                    <button class="btn btn-default" type="button">Sign Up</button>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <button class="btn btn-default" type="button">Sign In</button>
-                </div>
-            </div>
-        </div>
+    
     </div>
+    <div class ="picture">
+    <img src=" " class="profilebox2">
+    <input type="button" class="uploadbutton2" value="Upload picture"> 
+    </div>
+    
+</div>

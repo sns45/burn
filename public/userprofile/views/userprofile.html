@@ -1,61 +1,59 @@
-<div class="container" id="welcomecontainer">
-        <h1 id="welcome"> </h1></div>
-    <div class="container" id="planningtablecontainer">
-        <div class="row">
-            <div class="col-md-6 col-md-push-0 col-sm-push-3 col-xs-push-3"><img src="assets/img/profile.png"></div>
-            <div class="col-md-6" id="profilecolumn">
-                <div class="row profiledetails">
-                    <div class="col-md-12">
-                        <p>First Name: {John }</p>
-                    </div>
+
+    <div class="maincontainer2">
+        <div class="user-info-container">
+            <div class="user-image-container">
+                <img class="user-image" src="https://image.freepik.com/free-icon/user-male-shape-in-a-circle-ios-7-interface-symbol_318-35357.jpg">
+            </div>
+            <div class="user-personal-info-container">
+                <div class="user-personal-info-row">
+                    <span> <p ng-bind="vm.first_name"></p></span>
                 </div>
-                <div class="row profiledetails">
-                    <div class="col-md-12">
-                        <p>Last Name: {Doe}</p>
-                    </div>
+                <div class="user-personal-info-row">
+                    <span> <p ng-bind="vm.last_name"></span>
                 </div>
-                <div class="row profiledetails">
-                    <div class="col-md-12">
-                        <p>Address {20 Bergen Avenue Bronx NY 1001}</p>
-                    </div>
+                 <div class="user-personal-info-row">
+                    <span> <p ng-bind="vm.phone_number"></span>
                 </div>
-                <div class="row profiledetails">
-                    <div class="col-md-12">
-                        <p>Age:{28} Height:{5'8}" Weight: {300lb}</p>
+                <div class="user-personal-info-row">
+                    <span> <p ng-bind="vm.address"></span>
+                </div>
+                <div class="user-personal-info-row physical-parameters-row">
+                    <div class="physical-parameters">
+                        <span>Age: <p ng-bind="vm.age"></span>
+                    </div>
+                    <div class="physical-parameters">
+                        <span>Height: <p ng-bind="vm.height"></span>
+                    </div>
+                    <div class="physical-parameters">
+                        <span>Weight: <p ng-bind="vm.weight"></span>
                     </div>
                 </div>
             </div>
+            <br>
+            
         </div>
+         
+        <div class="lose-method-choice-container2">
+        <input type="button" value="SignOut" ng-click="vm.route('SignOut')">
+         <div class="choose-fitness-method-buttons-container">
+             <div class="choose-fitness-method-button-wrapper">
+                 <input type="button" name="meet-nutritionist" class="choose-fitness-method-input meet-nutritionist" value="Your Nutritionist" ng-click="vm.route('ProfileNutritionists')">
+             </div>
+             <div class="choose-fitness-method-button-wrapper">
+                 <input type="button" name="build-diet-plan" class="choose-fitness-method-input build-diet-plan" value="Your Weekly Diet Plan" ng-click="vm.route('ProfileDietPlan')">
+             </div>
+         </div>
+         <div class="choose-fitness-method-buttons-container">
+
+             <div class="choose-fitness-method-button-wrapper">
+                 <input type="button" name="work-out" class="choose-fitness-method-input work-out" value="Work Out"
+                        ng-click="vm.route('workout')">
+             </div>
+
+
+             <div class="choose-fitness-method-button-wrapper">
+                 <input type="button" name="keep-track-of-food" class="choose-fitness-method-input keep-track-of-food" value="Keep Track of your Food" ng-click="vm.route('trackfoods')">
+             </div>
+         </div>
+     </div>
     </div>
-    <div class="container" id="maincontainer">
-        <div class="row">
-            <div class="col-md-12">
-                <h4>Customize Health Plan</h4></div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                  
-                <button class="btn btn-default btn-block btn-lg choose-fitness-method-input meet-nutritionist" name="meet-nutritionist" type="button" ng-click="vm.route('nutritionists')"><i class="fa fa-user-md"></i> Meet a Nutritionist</button>
-            </div>
-            <div class="col-md-6">
-               
-                <button class="btn btn-default btn-block btn-lg choose-fitness-method-input build-diet-plan" name="build-diet-plan" type="button" ng-click="vm.route('diet')"><i class="glyphicon glyphicon-list" ></i> Build Diet Plan</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-             
-                <button class="btn btn-default btn-block btn-lg choose-fitness-method-input work-out" name="work-out" type="button" ng-click="vm.route('workout')"><i class="glyphicon glyphicon-lock"></i> Work Out</button>
-            </div>
-            <div class="col-md-6">
-                <button class="btn btn-default btn-block btn-lg choose-fitness-method-input keep-track-of-food" name="keep-track-of-food" type="button" ng-click="vm.route('nutritionfacts')"><i class="glyphicon glyphicon-cutlery"></i> Keep Track of Food</button>
-            </div>
-        </div>
-    </div>
-   <div class="container">
-    <div class="row">
-        <div class="col-md-2 col-md-offset-5">
-            <button class="btn btn-warning btn-block btn-sm" type="button" id="savebutton">Sign out</button>
-        </div>
-    </div>
-</div>

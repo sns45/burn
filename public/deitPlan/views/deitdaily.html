@@ -1,0 +1,24 @@
+
+<div class="maincontainer">
+    <div class="workout-option">
+        <div class="title-container">
+            <div class="header2">
+                <span class="choose-method">Build your diet plan</span>
+            </div>
+        </div>
+        <div class="innerwhitebox">
+         <input type="text" class="foodname" ng-model="vm.food">
+         <label class="maxcalorieslabel">Max calories <p1 ng-bind="vm.maxCal"></p1> </label>
+         <div class="caloriebox" ng-bind="vm.totalCal"> </div>
+         <input type="button" class="searchbutton" value="#Calories" ng-click="vm.route('search')">
+         <div class="contentcaloriebox" ng-bind="vm.numCal">
+         </div>
+        <input type="button" value="Save" name="save-personal-trainer" class="savecalbutton" ng-click="vm.close()">    
+        <input type="button" class="addbutton" value="Add" ng-click="vm.route('add')">
+            
+       </div>
+        <div class="deitbuttons">
+       
+    </div>
+    </div>
+</div>
