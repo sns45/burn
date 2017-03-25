@@ -86,7 +86,7 @@
             </thead>
             <tbody>
                 <tr ng-repeat="obj in vm.weekArray" ng-click="vm.go(obj)">
-                    <td ng-class="vm.customStyle.colorClass">{{obj.day}}</td>
+                    <td  ng-class="{selectedDay: obj.day === vm.currentSelectedDay}">{{obj.day}}</td>
                 </tr>
             </tbody>
         </table>
