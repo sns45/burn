@@ -2,14 +2,15 @@
     <!-- <div class="title-container container"> -->
     <div class="title-container">
         <div class="header2">
-            <h3>Your diet plan this week</h3> </div>
+            <h3>Your diet plan this week</h3>
+        </div>
     </div>
-    <div class="nutritionist-p2st-container">
-        <table class="nutritionist-p2st-table">
+    <div class="nutritionist-list-container">
+        <table class="nutritionist-list-table">
             <thead>
                 <tr>
                     <th class="thTable">Day</th>
-                    <th class="thTable">Meal</th>
+                    <th class="thTable">Food</th>
                     <th class="thTable">Total Calories</th>
                 </tr>
             </thead>
@@ -17,95 +18,34 @@
                 <tr>
                     <td class="tdTable">Monday</td>
                     <td class="tdTable">
-                        <input type="button" value="Breakfast" ng-click="vm.route('MBF')">
-                        <input type="button" value="First Snack" ng-click="vm.route('MFS')">
-                        <input type="button" value="Lunch" ng-click="vm.route('ML')">
-                        <input type="button" value="Second Snack"  ng-click="vm.route('MSB')">
-                        <input type="button" value="Diner" ng-click="vm.route('MD')">
+                        <ol>
+                            <li>Eggs</li>
+                            <li>Tuna Fish</li>
+                            <li>Vegetables</li>
+                        </ol>
                     </td>
-                    <td class="tdTable" ng-bind="vm.mondayCal"></td>
+                    <td class="tdTable">1200</td>
                 </tr>
                 <tr>
                     <td class="tdTable">Tuesday</td>
                     <td class="tdTable">
-                            <input type="button" value="Breakfast" ng-click="vm.route('TBF')"> 
-                            <input type="button" value="First Snack" ng-click="vm.route('TFS')"> 
-                            <input type="button" value="Lunch" ng-click="vm.route('TL')"> 
-                            <input type="button" value="Second Snack" ng-click="vm.route('TSB')"> 
-                            <input type="button" value="Diner" ng-click="vm.route('TD')">
+                        <ol>
+                            <li>3 Eggs</li>
+                            <li>1 Big Mac</li>
+                            <li>1 Bacon Strip</li>
+                        </ol>
                     </td>
-                    <td class="tdTable" ng-bind="vm.tuesadayCal"></td>
-                </tr>
-                <tr>
-                    <td class="tdTable">Wednesday</td>
-                    <td class="tdTable">
-                        
-                            <input type="button" value="Breakfast" ng-click="vm.route('WBF')">
-                            <input type="button" value="First Snack" ng-click="vm.route('WFS')">
-                            <input type="button" value="Lunch" ng-click="vm.route('WL')">
-                            <input type="button" value="Second Snack" ng-click="vm.route('WSB')">
-                            <input type="button" value="Diner" ng-click="vm.route('WD')">
-                        
-                    </td>
-                    <td class="tdTable" ng-bind="vm.wednesdayCal"></td>
-                </tr>
-                <tr>
-                    <td class="tdTable">Thursday</td>
-                    <td class="tdTable">
-                        
-                            <input type="button" value="Breakfast" ng-click="vm.route('THBF')"> 
-                            <input type="button" value="First Snack" ng-click="vm.route('THFS')"> 
-                            <input type="button" value="Lunch" ng-click="vm.route('THL')"> 
-                            <input type="button" value="Second Snack" ng-click="vm.route('THSB')"> 
-                            <input type="button" value="Diner" ng-click="vm.route('THD')"> 
-                        
-                    </td>
-                    <td class="tdTable" ng-bind="vm.thursdayCal"></td>
-                </tr>
-                <tr>
-                    <td class="tdTable">Friday</td>
-                    <td class="tdTable">
-                        
-                            <input type="button" value="Breakfast" ng-click="vm.route('FBF')"> 
-                            <input type="button" value="First Snack" ng-click="vm.route('FFS')"> 
-                            <input type="button" value="Lunch" ng-click="vm.route('FL')"> 
-                            <input type="button" value="Second Snack" ng-click="vm.route('FSB')"> 
-                            <input type="button" value="Diner" ng-click="vm.route('FD')"> 
-                        
-                    </td>
-                    <td class="tdTable" ng-bind="vm.fridayCal"></td>
-                </tr>
-                <tr>
-                    <td class="tdTable">Saturday</td>
-                    <td class="tdTable">
-                        
-                            <input type="button" value="Breakfast" ng-click="vm.route('SBF')"> 
-                            <input type="button" value="First Snack" ng-click="vm.route('SFS')"> 
-                            <input type="button" value="Lunch" ng-click="vm.route('SL')"> 
-                            <input type="button" value="Second Snack" ng-click="vm.route('SSB')"> 
-                            <input type="button" value="Diner" ng-click="vm.route('SD')"> 
-                        
-                    </td>
-                    <td class="tdTable" ng-bind="vm.saturdayCal"></td>
-                </tr>
-                <tr>
-                    <td class="tdTable">Sunday</td>
-                    <td class="tdTable">
-                        
-                            <input type="button" value="Breakfast" ng-click="vm.route('SUBF')"> 
-                            <input type="button" value="First Snack" ng-click="vm.route('SUFS')"> 
-                            <input type="button" value="Lunch" ng-click="vm.route('SUL')"> 
-                            <input type="button" value="Second Snack" ng-click="vm.route('SUSB')"> 
-                            <input type="button" value="Diner" ng-click="vm.route('SUD')"> 
-                        
-                    </td>
-                    <td class="tdTable" ng-bind="vm.sundayCal"></td>
+                    <td class="tdTable">1800</td>
                 </tr>
             </tbody>
         </table>
     </div>
     <div class="save-plan-button save-personal-trainer-button-container">
         <div class="save-plan-wrapper save-personal-trainer-wrapper">
-            <input type="button" name="go-back-diet-plan" class="save-nutritionists-setting" ng-click="vm.route('back')" value="Back"></div>
+            <input type="button" name="go-back-diet-plan" class="save-nutritionists-setting" ng-click="vm.route('DietPlanExit')" value="Back">
+            <input type="button" name="edit-diet-plan" class="edit-nutritionists-list" ng-click="vm.route('DietPlanEdit')" value="Edit">
+<!--             <input type="button" value="BACK" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('Back')">
+            <input type="button" value="SAVE" name="save-personal-trainer" class="save-work-out-plan" ng-click="vm.route('Save')"> -->
+        </div>
     </div>
 </div>

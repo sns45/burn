@@ -3,23 +3,23 @@
         <p class="builddietplan"> Build your diet plan
     </div>
     <table class="innerwhitebox2" border="1">
-        
-             <thead>
-                <tr>
-                    <th class="thTable">Food Name</th>
-                    <th class="thTable">Number of Calories</th>
-                    <th class="thTable">Sample</th>
-                    <th class="thTable">Select</th>
-                </tr>
-            </thead>
-             <tbody>
-                <tr ng-repeat="obj in vm.dailyMeal track by $index">
-                    <td class="tdTable">{{obj.food_name}}</td>
-                    <td class="tdTable">{{obj.numberofCal}}</td>
-                    <td class="tdTable"><img ng-src="{{obj.thumb}}"></td>
-                    <td class="tdTable"><input type="checkbox" ng-click="vm.selectFunction(obj)"></td>
-                </tr>
-            </tbody>  
+        <tr>
+            <th>Food</th>
+            <th>Number of Calories</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td> 3 Eggs</td>
+            <td>400 calories</td>
+            <td>
+                <input type="checkbox"> </td>
+        </tr>
+        <tr>
+            <td> 1 tuna</td>
+            <td>100 calories</td>
+            <td>
+                <input type="checkbox"> </td>
+        </tr>
     </table>
     <input type="button" class="savebutton2" value="Save" ng-click="vm.route('save')">
     <input type="button" class="deletebutton" value="Delete" ng-click="vm.route('delete')"> 
