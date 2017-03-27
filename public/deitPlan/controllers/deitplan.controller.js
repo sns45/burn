@@ -47,6 +47,7 @@
                     } else {
                         vm.totalCal = pretotal;
                         vm.foodArray.push(food);
+                        console.log(week.day.foodArray);
 
                     }
                     break;
